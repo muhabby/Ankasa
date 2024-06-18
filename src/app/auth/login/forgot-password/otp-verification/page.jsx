@@ -1,4 +1,6 @@
-/* eslint-disable jsx-a11y/alt-text */
+"use client";
+
+import { Button, Input } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -15,7 +17,7 @@ const page = () => {
             backgroundColor: "#2395FF",
           }}
         >
-          <Image src="/illustration.png" width={400} height={400} />
+          <Image alt="" src="/illustration.png" width={400} height={400} />
         </div>
 
         {/* Right Content */}
@@ -31,7 +33,7 @@ const page = () => {
             style={{ height: 70, width: "70%" }}
           >
             <div className="pr-4">
-              <Image src="/logo.png" width={35} height={35} />
+              <Image alt="" src="/logo.png" width={35} height={35} />
             </div>
             <span
               style={{
@@ -55,35 +57,40 @@ const page = () => {
             >
               OTP Verification
             </span>
-            <div className="form-control gap-5">
-              <label className="input input-bordered input-info flex items-center gap-2">
-                <input
-                  type="text"
-                  className="grow"
-                  placeholder="Email"
-                  style={{ fontFamily: "poppins" }}
-                />
-              </label>
-              <label className="input input-bordered input-info flex items-center gap-2">
-                <input
-                  type="text"
-                  className="grow"
-                  placeholder="OTP"
-                  style={{ fontFamily: "poppins" }}
-                />
-              </label>
-              <button className="btn btn-info text-white">
+            <div className="flex flex-col gap-5">
+              <Input
+                type="email"
+                variant="static"
+                placeholder="Email"
+                style={{ fontFamily: "poppins" }}
+              />
+              <Input
+                type="text"
+                variant="static"
+                placeholder="OTP"
+                style={{ fontFamily: "poppins" }}
+              />
+            </div>
+            <Link href={"/auth/login"} style={{ width: "100%" }}>
+              <Button
+                className="mt-5"
+                variant="gradient"
+                color="blue"
+                style={{ height: 50, width: "100%" }}
+              >
                 <span
                   style={{
                     fontFamily: "poppins",
                     fontSize: "15px",
                     fontWeight: "500",
+                    textTransform: "none",
+                    fontWeight: "500",
                   }}
                 >
                   Verify OTP
                 </span>
-              </button>
-            </div>
+              </Button>
+            </Link>
           </div>
         </div>
       </main>
