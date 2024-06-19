@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div id="top"></div>
+
+<div align="center">
+  <h3 align="center">Ankasa Website</h3>
+  
+  <a href="">
+    <image align="center" width="200" src='https://res.cloudinary.com/dpasid4jl/image/upload/v1718761185/ankasa-assets/ankasa-logo/Ankasa_Logo_Square_btwdyg.png' />
+  </a>
+
+  <p></p>
+  
+  <p align="center">
+    <a href="https://github.com/muhabby/FE-Ankasa/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/muhabby/FE-Ankasa/issues">Feature Request</a>
+  </p>
+</div>
+
+## Table of Contents
+
+<div>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#screenshoots">Screenshots</a></li>
+    <li><a href="#contribution">Contribution</a></li>
+    <li><a href="#related-project">Related Project</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</div>
+
+## About The Project
+
+**Ankasa Website** is a platform for users to book flight tickets. This website offers features for viewing flight schedules and booking flight tickets. The website also includes an authentication system to ensure that user data is secure, allowing only registered users to access it.
+
+This website is still under development, so many features are not yet functional. The developers are working to fix these issues and add several new features to enhance the user experience.
+
+### Built With
+
+- [Next.Js](https://nextjs.org/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Axios](https://axios-http.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Material Tailwind](https://www.material-tailwind.com/)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Before going to the installation stage there are some software that must be installed first.
+
+- [Node.Js](https://nodejs.org/en/download/)
+
+### Installation
+
+- Clone Repository
+
+```sh
+git clone https://github.com/muhabby/FE-Ankasa.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Install Module
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Setup .env
 
-## Learn More
+```sh
+API_BASE_URL = "api url"
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Start Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Screenshoots
 
-## Deploy on Vercel
+<p align="center" display=flex>
+    <table>
+        <tr>
+            <td align="center">Landing Page</td>
+            <td align="center">Regist Page</td>
+        </tr>
+        <tr>
+            <td><image src="https://res.cloudinary.com/dpasid4jl/image/upload/v1718762085/ankasa-assets/ss-website/Landing_cdb7w4.png" alt="Landing Page" width=100%></td>
+            <td><image src="https://res.cloudinary.com/dpasid4jl/image/upload/v1718762112/ankasa-assets/ss-website/Register_ozh1f8.png" alt="Regist Page" width=100%/></td>
+        </tr>
+        <tr>
+            <td align="center">Login Page</td>
+            <td align="center">Home</td>
+        </tr>
+        <tr>
+            <td><image src="https://res.cloudinary.com/dpasid4jl/image/upload/v1718762090/ankasa-assets/ss-website/Login_rprset.png" alt="Login Page" width=100%></td>
+            <td><image src="https://res.cloudinary.com/dpasid4jl/image/upload/v1718762065/ankasa-assets/ss-website/Schedule_qusxfg.png" alt="Home" width=100%/></td>
+        </tr>
+        <tr>
+            <td align="center">Booking</td>
+            <td align="center">My Booking</td>
+        </tr>
+        <tr>
+            <td><image src="https://res.cloudinary.com/dpasid4jl/image/upload/v1718762064/ankasa-assets/ss-website/Booking_mc0tau.png" alt="Booking" width=100%></td>
+            <td><image src="https://res.cloudinary.com/dpasid4jl/image/upload/v1718762091/ankasa-assets/ss-website/My_Booking_dzfvea.png" alt="My Booking" width=100%/></td>
+        </tr>
+        <tr>
+            <td align="center">Edit Profile</td>
+            <td align="center">Print Ticket</td>
+        </tr>
+        <tr>
+            <td><image src="https://res.cloudinary.com/dpasid4jl/image/upload/v1718762065/ankasa-assets/ss-website/Edit_Profile_hjh7ib.png" alt="Edit Profile" width=100%></td>
+            <td><image src="https://res.cloudinary.com/dpasid4jl/image/upload/v1718762105/ankasa-assets/ss-website/Print_Ticket_e7pf77.png" alt="Print Ticket" width=100%/></td>
+        </tr>
+    </table>  
+</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contribution
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions that make the open source community the best place to learn and create. Every contribution you make is valuable.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b your/branch`)
+3. Commit your Changes (`git commit -m 'Add some new feature'`)
+4. Push to the Branch (`git push origin feature/yourbranch`)
+5. Open a Pull Request
+
+## Related Project
+
+- [Ankasa Web Demo](https://ankasa-topaz.vercel.app/)
+
+## Contact
+
+Feel free to connect with me for future collaborations [Muhabby Mulya](https://github.com/muhabby)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
